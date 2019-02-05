@@ -1,18 +1,18 @@
 [alias]
 	ch = checkout
 	s = status
-	l = "!git log --date=short --pretty=format:'%h|%an|%cd (%cr)|%s' -10 | while IFS='|' read hash author date message; do printf '%s %-16s %-27s %s\n' \"$hash\" \"$author\" \"$date\" \"$message\"; done"
+	l = "!git log --date=short --pretty=format:'%h|%an|%cd (%cr)|%s' -10 | while IFS='|' read hash author date message; do printf '%s %-16s %-27s %s\n' \"$hash\" \"$author\" \"$date\" \"$message\"; done"	
 
 	# list branches sorted by last modified
-	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"	
 
-    # Show the diff between the latest commit and the current state
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"	
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
-	remotes = remote -v
+	remotes = remote -v	
 
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
