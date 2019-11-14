@@ -1,0 +1,23 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Snazzy Operator",
+    "workbench.colorCustomizations": {
+        "[Snazzy Operator]": {
+             "statusBar.foreground": "#858282"
+        }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "editor.minimap.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.tabSize": 2,
+    "cSpell.userWords": [],
+    "breadcrumbs.enabled": false
+}
