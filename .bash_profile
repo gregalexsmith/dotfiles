@@ -35,7 +35,8 @@ alias dce="docker-compose exec"
 alias dcr="docker-compose restart"
 
 # misc
-alias gh=open_github
+alias edit="code ~/."
+alias load="source ~/.bash_profile"
 
 
 # -- EXPORT --
