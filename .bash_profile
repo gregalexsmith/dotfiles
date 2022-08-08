@@ -20,6 +20,12 @@ prompt_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+resetdev() {
+  exe git checkout main
+  exe git pull
+  exe git branch -D dev
+  exe git checkout -b dev
+}
 
 # -- ALIASES --
 
